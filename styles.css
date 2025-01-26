@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e6e6fa, #afeeee); /* Light purple and turquoise */
+    color: #333;
+    text-align: center;
+}
+header {
+    background-color: #9370db; /* Light purple shade */
+    padding: 20px;
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.button-list {
+    margin: 20px 0;
+}
+.button-list button {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #40e0d0; /* Turquoise */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-list button:hover {
+    background-color: #20b2aa;
+}
+.safe-zones {
+    margin: 30px 0;
+}
+#map {
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #9370db;
+    border-radius: 10px;
+}
+.send-location {
+    margin-top: 20px;
+}
+.send-location button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #6a5acd; /* Purple */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.send-location button:hover {
+    background-color: #483d8b;
+}
+
+/* Add the flashing circle animation */
+@keyframes flashing {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.flashing-circle {
+    animation: flashing 1s infinite;
+}
